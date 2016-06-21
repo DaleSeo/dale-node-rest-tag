@@ -1,1 +1,1 @@
-# Dale's To-do Application 
+# Dale's Todo Application 
