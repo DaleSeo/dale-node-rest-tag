@@ -8,23 +8,23 @@ app.listen(3000, () => {
   console.log("This server is listening through port 3000.")
 });
 
-app.get('/todos', (req, res) => {
+app.get('/tags', (req, res) => {
   res.send(svc.list());
 });
 
-app.get('/todos/:id', (req, res) => {
+app.get('/tags/:id', (req, res) => {
   res.send(svc.detail(req.params.id));
 });
 
-app.post('/todos', (req, res) => {
+app.post('/tags', (req, res) => {
   res.status(201).send(svc.create(req.body));
 });
 
-app.delete('/todos/:id', (req, res) => {
+app.delete('/tags/:id', (req, res) => {
   res.send(svc.remove(req.params.id));
 });
 
-app.put('/todos/:id', (req, res) => {
+app.put('/tags/:id', (req, res) => {
   req.body.id = req.params.id;
   res.send(svc.modify(req.body));
 });

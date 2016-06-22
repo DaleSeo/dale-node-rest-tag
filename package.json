@@ -1,18 +1,18 @@
 {
-  "name": "dale-todo",
+  "name": "dale-node-rest-tag",
   "version": "1.0.0",
-  "description": "Dale's Todo Application",
+  "description": "Dale's tag REST application written by NodeJS",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://DaleSeo@bitbucket.org/seo-dale/dale-todo.git"
+    "url": "git+https://DaleSeo@bitbucket.org/team-dale/dale-node-rest-tag.git"
   },
   "author": "Dale Seo",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/seo-dale/dale-todo#readme",
+  "homepage": "https://bitbucket.org/team-dale/dale-node-rest-tag#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0"
