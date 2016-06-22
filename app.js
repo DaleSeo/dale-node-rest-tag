@@ -17,10 +17,14 @@ app.get('/todos/:id', (req, res) => {
 });
 
 app.post('/todos', (req, res) => {
-  console.log(req.body);
   res.status(201).send(svc.create(req.body));
 });
 
 app.delete('/todos/:id', (req, res) => {
   res.send(svc.remove(req.params.id));
+});
+
+app.put('/todos/:id', (req, res) => {
+  req.body.id = req.params.id;
+  res.send(svc.modify(req.body));
 });
