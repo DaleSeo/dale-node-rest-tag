@@ -10,6 +10,12 @@ module.exports = {
     console.log(obj);
     list.push(obj);
     return {id: obj.id};
+  },
+  remove: function(id) {
+    list = list.filter((obj) => {
+      return obj.id != id;
+    });
+    return {};
   }
 };
 
